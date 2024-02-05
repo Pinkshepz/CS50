@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block title %}
+{% endblock %}
+
+{% block main %}
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <td class="text-start">Symbol</td>
+                <td class="text-start">Name</td>
+                <td class="text-end">Shares</td>
+                <td class="text-end">Price</td>
+                <td class="text-end">TOTAL</td>
+            </tr>
+        </thead>
+        <tbody>
+
+            {% for row, name, price, total in rows %}
+
+            <tr>
+                <td class="text-start">{{ row["symbol"] }}</td>
+                <td class="text-start">{{ name }}</td>
+                <td class="text-end">{{ row["SUM(share)"] }}</td>
+                <td class="text-end">{{ price }}</td>
+                <td class="text-end">{{ total }}</td>
+            </tr>
+
+            {% endfor %}
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td class="border-0 fw-bold text-end" colspan="4">Cash</td>
+                <td class="border-0 text-end" >{{ cash }}</td>
+            </tr>
+            <tr>
+                <td class="border-0 fw-bold text-end" colspan="4">TOTAL</td>
+                <td class="border-0 w-bold text-end" >{{ total }}</td>
+            </tr>
+        </tfoot>
+    </table>
+
+{% endblock %}

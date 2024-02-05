@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+        <style>
+            body {
+                font-family: "Poppins", sans-serif;
+            }
+        </style>
+    <link href="styles.css" rel="stylesheet">
+    <title>Meet Pusheen!</title>
+</head>
+<body>
+    <header>
+        <ul class="navigator-main">
+            <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="./quiz.html" class="nav-link">Quiz</a></li>
+            <li class="nav-item item-push"><a href="./contact.html" class="nav-link">Contacts</a>
+            </li>
+            <li class="nav-item"><a href="./gallery.html" class="nav-link">Gallery</a>
+            </li>
+        </ul>
+    </header>
+
+    <div class="header-section-combine header">
+        <div class="header-margin-bar"></div>
+        <div class="introduction-box-center">
+            <h1 class="introduction">Trivia about Pusheen</h1>
+        </div>
+    </div>
+    <div>
+        <div class="trivia-container-pack">
+            <form id="f1" action="">
+                <h3>Which country is the hometown of Pusheen?</h3>
+                <button class="trivia-button false">USA</button>
+                <button class="trivia-button true">Meowland</button>
+                <button class="trivia-button false">Kitty Paradise</button>
+                <button class="trivia-button false">Japan</button>
+            </form>
+            <br>
+            <hr>
+            <br>
+            <form id="f1" action="">
+                <h3>Who is the little brother of Pusheen?</h3>
+                <button class="trivia-button false">Stormy</button>
+                <button class="trivia-button false">Pushy</button>
+                <button class="trivia-button false">Dolly</button>
+                <button class="trivia-button true">Pip</button>
+            </form>
+            <br>
+            <hr>
+            <br>
+            <form id="f1" action="">
+                <h3>Which food is one of the Pusheen favourites?</h3>
+                <button class="trivia-button false">sushi</button>
+                <button class="trivia-button false">cotton candy</button>
+                <button class="trivia-button true">cookie</button>
+                <button class="trivia-button false">cracker</button>
+            </form>
+            <br>
+            <hr>
+            <br>
+            <form id="f1" action="">
+                <h3>Which activity is not in Pusheen's daily routine?</h3>
+                <button class="trivia-button true">exercise</button>
+                <button class="trivia-button false">go to human bedroom</button>
+                <button class="trivia-button false">play music</button>
+                <button class="trivia-button false">pizza lunch</button>
+            </form>
+            <br>
+            <br>
+        </div>
+    </div>
+
+    <footer>
+        <p class="footer-main">
+            @2022 Pusheen
+        </p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            // When the answer is correct
+            let corrects = document.querySelectorAll('.true');
+            for (let i = 0; i < corrects.length; i++) {
+                corrects[i].addEventListener('click', function (e) {
+                    corrects[i].style.backgroundColor = 'green';
+                    e.preventDefault();
+                });
+            };
+
+            //  When the answer is incorrect
+            let incorrects = document.querySelectorAll('.false');
+            for (let i = 0; i < incorrects.length; i++) {
+                incorrects[i].addEventListener('click', function (e) {
+                    incorrects[i].style.backgroundColor = 'red';
+                    e.preventDefault();
+                });
+            };
+        });
+    </script>
+</body>
+</html>

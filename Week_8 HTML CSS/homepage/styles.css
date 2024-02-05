@@ -1,0 +1,305 @@
+body {
+    color: #050505;
+}
+
+.item-push {
+    margin-left: auto;
+}
+
+p, table, button {
+    font-family: 'Poppins';
+    font-size: 1rem;
+}
+
+h2 {
+    font-weight: 900;
+    font-family: 'Poppins';
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 5%;
+}
+
+a, header, h3, h4 {
+    font-weight: 700;
+    font-family: 'Poppins';
+}
+
+.header-section-combine {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-margin-bar {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    z-index: -1;
+    background-color: rgba(245, 245, 245, 1);
+}
+
+.section-home-front {
+    background: url("./sky.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 500px;
+    margin-top: 50px;
+}
+
+.navigator-main {
+    position:fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 1;
+    list-style-type: none;
+    display: flex;
+    justify-content: left;
+    padding: 5px 5px 5px 5px;
+    background-color: rgba(245, 245, 245, 0.95);
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #050505;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    color: #050505; 
+}
+
+.introduction-box-upper {
+    position: relative;
+    top: 100px;
+    left: 5%;
+    width: 50%;
+}
+
+.introduction-box-lower {
+    position: relative;
+    top: 90px;
+    left: 5%;
+    width: 50%;
+}
+
+.introduction-box-center {
+    position: relative;
+    margin-top: 140px;
+    margin-bottom: 80px;
+    left: 15%;
+    width: 70%;
+    text-align: center;
+}
+
+.introduction-box-text {
+    position: relative;
+    top: 115px;
+    left: 5%;
+    width: 50%;
+}
+
+.introduction {
+    font-size: 4rem;
+    font-weight: 1000;
+}
+
+.pusheen-flying {
+    width: 250px;
+    transform: scaleX(-1);
+}
+
+.pusheen-flying-box {
+    display: flex;
+    justify-content: right;
+    position: relative;
+    margin-top: -150px;
+    margin-right: 10%;
+    animation: floating-sky 4s infinite;
+}
+
+@keyframes floating-sky {
+    0% {
+        transform: translateY(15px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(15px);
+    }
+}
+
+.round-box-container-pack {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 5% 0px 5%;
+}
+
+.round-box-container {
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    height: min-content;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.round-box-container-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    height: min-content;
+    padding-right: 10px;
+}
+
+.cat-in-box {
+    height: 100px;
+}
+
+.hobby-panel-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 5% 0px 5%;
+}
+
+.hobby-panel {
+    width: 30%;
+    text-align: center;
+    text-emphasis: center;
+}
+
+.hobby-image {
+    height: 150px;
+    margin-top: 25px;
+}
+
+.table-container {
+    margin: 0 5% 0 5%;
+}
+
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#quiz-button {
+    border-radius: 50px;
+    background-image: linear-gradient(to bottom right, red, yellow);
+    width: 150px;
+    height: fit-content;
+    margin-top: 25px;
+    padding: 0;
+    text-decoration: none;
+    font-weight: 1000;
+    font-size: 1.25rem;
+    align-items: center;
+    color: white;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: left;
+    padding: 15px 20px 15px 20px;
+    margin-bottom: 0%;
+    background-color: whitesmoke;
+}
+
+.page-header {
+    font-weight: 1000;
+    text-align: center;
+    margin: 50px 0 50px 0;
+}
+
+.trivia-button {
+    border-radius: 50px;
+    border: solid lightgray 2.5px;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 25px;
+    padding: 0 15px 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.25rem;
+    align-items: center;
+}
+
+.trivia-container-pack {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 5% 0px 5%;
+}
+
+.gallery-panel-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0px 5% 0px 5%;
+}
+
+@media screen and (max-width: 825px) {
+    h2 {
+        font-weight: 900;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .introduction-box-upper {
+        position: relative;
+        text-align: center;
+        top: 100px;
+        left: 10%;
+        width: 80%;
+    }
+
+    .introduction-box-lower {
+        position: relative;
+        text-align: center;
+        top: 90px;
+        left: 10%;
+        width: 80%;
+    }
+
+    .introduction-box-text {
+        position: relative;
+        text-align: center;
+        top: 115px;
+        left: 10%;
+        width: 80%;
+    }
+
+    .pusheen-flying {
+            width: 0%;
+    }
+
+    .round-box-container-pack {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .round-box-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: min-content;
+        border-radius: 25px;
+        padding: 10px;
+    }
+
+    .hobby-panel-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 5% 0px 5%;
+    }
+
+    .hobby-panel {
+        width: 100%;
+        text-align: center;
+        margin-top: 25px;
+    }
+}

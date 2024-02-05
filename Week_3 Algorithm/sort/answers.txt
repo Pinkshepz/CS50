@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: It takes the most time to sort random and reversed numbers, but less time to sort the sorted ones. [high O(), but low Ω()]
+
+sort2 uses: merge sort
+
+How do you know?: It is the fastest in both upperbound and lowerbound run time. [low O(), and low Ω()]
+
+sort3 uses: selection sort
+
+How do you know?: Its upperbound run time is in the second rank, and takes enormous time to sort the already sorted numbers. [high O(), and high Ω()]
